@@ -1,0 +1,38 @@
+package jobsheet10SequentialSearch;
+
+import java.util.Scanner;
+
+public class tugasPraktikum1 {
+
+    public static void main(String[] args) {
+        int cari;
+        boolean found = false;
+        int[] angka = new int[]{5, 12, 13, 3, 4, 5, 5, 9, 8, 23, 21};
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Data pada array :\n 5  12  13  3  4  5  5  9  8  23  21 ");
+        //for (int i = 0; i < angka.length; i++) {
+            //System.out.println(angka[i] + "\n");
+        //}
+        System.out.println();
+        System.out.print("Angka yang ingin di cari : ");
+        cari = scan.nextInt();
+        int a = 0;
+        for (int i = 0; i < angka.length; i++) {
+            if (cari == angka[i]) {
+                found = true;
+                a++;
+
+            }
+
+        }
+        if (found == true) {
+            System.out.println();
+            System.out.println("Data yang ditemukan ditemukan sebanyak : " + a + " kali");
+        } else {
+             System.out.println();                               
+            System.out.println("Data tidak ditemukan!");
+        }
+
+    }
+
+}
