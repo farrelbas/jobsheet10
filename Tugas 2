@@ -1,0 +1,34 @@
+package jobsheet10SequentialSearch;
+
+public class tugasPraktikum2 {
+
+    public static void main(String[] args) {
+
+        int cari = 0;
+        boolean found = false;
+        int[] data = new int[]{81, 89, 76, 90, 92, 60, 94, 100};
+        double jumlah = 0;
+        System.out.println("Data pada array : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+
+        }
+
+        for (int j = 0; j < data.length; j++) {
+            jumlah = jumlah + data[j];
+
+        }
+        double rataRata = jumlah / data.length;
+
+        System.out.println("\nRata rata nilai array :" + rataRata);
+        System.out.print("Nilai yang diatas rata rata adalah : ");
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] >= rataRata) {
+                int rata = data[i];
+                System.out.print(rata + "\t");
+            }
+
+        }
+
+    }
+}
