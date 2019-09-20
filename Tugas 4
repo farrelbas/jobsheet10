@@ -1,0 +1,95 @@
+package jobsheet10SequentialSearch;
+
+import java.util.Scanner;
+
+public class tugasPraktikum4 {
+
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Masukkan Kalimat : ");
+
+        String cari = scan.nextLine();
+
+        int hasil = 0;
+        int x;
+        int a = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'a') {
+                a++;
+            }
+        }
+        int A = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'A') {
+                A++;
+            }
+        }
+
+        int i = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'i') {
+                i++;
+            }
+        }
+        int I = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'I') {
+                I++;
+            }
+        }
+
+        int u = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'u') {
+                u++;
+            }
+        }
+        int U = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'U') {
+                U++;
+            }
+        }
+
+        int e = 0;
+
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'e') {
+                e++;
+            }
+        }
+        int E = 0;
+
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'E') {
+                E++;
+            }
+        }
+
+        int o = 0;
+
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'o') {
+                o++;
+            }
+        }
+        int O = 0;
+        for (x = 0; x < cari.length(); x++) {
+            if (cari.charAt(x) == 'O') {
+                O++;
+            }
+        }
+        hasil = A + I + U + E + O + a + i + u + e + o;
+        System.out.println("Jumlah huruf A : " + A);
+        System.out.println("Jumlah huruf I : " + I);
+        System.out.println("Jumlah huruf U : " + U);
+        System.out.println("Jumlah huruf E : " + E);
+        System.out.println("Jumlah huruf O : " + O);
+        System.out.println("Jumlah huruf a : " + a);
+        System.out.println("Jumlah huruf i : " + i);
+        System.out.println("Jumlah huruf u : " + u);
+        System.out.println("Jumlah huruf e : " + e);
+        System.out.println("Jumlah huruf o : " + o);
+        System.out.println("Jumlah huruf vokal : " + hasil);
+    }
+}
