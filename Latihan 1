@@ -1,0 +1,27 @@
+package jobsheet10SequentialSearch;
+
+import java.util.Scanner;
+
+public class latihanpraktikum1 {
+
+    public static void main(String[] args) {
+        String cari;
+        boolean found = false;
+        String[] buah = {"Apel","Pir","Jeruk","Semangka","Nanas"};
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Masukan buah yang ingin dicari");
+        cari = scan.next();
+        for (int i = 0; i < buah.length; i++) {
+            if (cari.equalsIgnoreCase( buah[i])) {
+                found = true;
+                break;
+            }
+        }
+        if (found == true) {
+            System.out.println("Buah Ditemukan");
+        } else {
+            System.out.println("Buah tidak ditemukan");
+        }
+    }
+
+}
