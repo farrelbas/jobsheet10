@@ -1,0 +1,16 @@
+package jobsheet10SequentialSearch;
+
+public class latihanpraktikum3 {
+    public static void main(String[] args) {
+        int max = 0;
+        int [] data = new int[]{5,10,15,20,25,30,6,8,12,56,100};
+        System.out.println("Data pada array");
+        for (int i = 0; i < data.length; i++){
+            System.out.println(data[i]+"\t");
+            if (data [i] >= max){
+                max = data [i];
+            }
+    }
+        System.out.println("\n Data terbear dari array adalah " + max);
+    }
+}
