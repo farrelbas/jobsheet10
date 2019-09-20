@@ -1,0 +1,21 @@
+package jobsheet10SequentialSearch;
+
+import java.util.Scanner;
+
+public class latihanpraktikum4 {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String cari;
+        System.out.println("Masukan Sebua Kata Atau Kalimat: ");
+        cari = scan.next();
+
+        int a = 0;
+        for (int i = 0; i < cari.length(); i++) {
+             if(cari.charAt(i) == 'i'){
+                 a++;
+             }
+        }
+        System.out.println("Jumlah huruh A pada kalimat tersebut adalah " + a);
+    }
+}
