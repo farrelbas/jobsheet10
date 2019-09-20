@@ -1,0 +1,24 @@
+package jobsheet10SequentialSearch;
+
+import java.util.Scanner;
+
+public class latihanpraktikum2 {
+
+    public static void main(String[] args) {
+        int cari;
+        boolean found = false;
+        int[] absen = new int[]{1,2,3,4,5,6,7,8,9,10};
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Masukan absen yang ingin dicari");
+        cari = scan.nextInt();
+        for (int i = 0; i < absen.length; i++) {
+            if (cari == absen[i]) {
+                found = true;
+                System.out.println("Absen ditemukan pada indeks ke -" + i);
+            }
+        }
+        if (found == false) {
+            System.out.println("Absen tidak ditemukan");
+        }
+        }
+    }
